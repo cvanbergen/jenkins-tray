@@ -240,6 +240,12 @@
     <Compile Include="UI\AuthenticationTokenForm.Designer.cs">
       <DependentUpon>AuthenticationTokenForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI\Controls\TooltipSettingsCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Controls\TooltipSettingsCtrl.Designer.cs">
+      <DependentUpon>TooltipSettingsCtrl.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -267,6 +273,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="UI\AuthenticationTokenForm.resx">
       <DependentUpon>AuthenticationTokenForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Controls\TooltipSettingsCtrl.resx">
+      <DependentUpon>TooltipSettingsCtrl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\MainForm.resx">
       <SubType>Designer</SubType>
