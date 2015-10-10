@@ -215,18 +215,6 @@
     <Compile Include="UI\Controls\ServerListControl.Designer.cs">
       <DependentUpon>ServerListControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\Controls\NotificationSettingsControl.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UI\Controls\NotificationSettingsControl.Designer.cs">
-      <DependentUpon>NotificationSettingsControl.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UI\Controls\NotificationsSettingsControl.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UI\Controls\NotificationsSettingsControl.Designer.cs">
-      <DependentUpon>NotificationsSettingsControl.cs</DependentUpon>
-    </Compile>
     <Compile Include="UI\Controls\ServersSettingsControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -240,11 +228,23 @@
     <Compile Include="UI\AuthenticationTokenForm.Designer.cs">
       <DependentUpon>AuthenticationTokenForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\Controls\TooltipSettingsCtrl.cs">
+    <Compile Include="UI\Controls\SoundNotificationsControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UI\Controls\TooltipSettingsCtrl.Designer.cs">
-      <DependentUpon>TooltipSettingsCtrl.cs</DependentUpon>
+    <Compile Include="UI\Controls\SoundNotificationsControl.designer.cs">
+      <DependentUpon>SoundNotificationsControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Controls\SoundSettingsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Controls\SoundSettingsControl.designer.cs">
+      <DependentUpon>SoundSettingsControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Controls\TooltipSettingsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Controls\TooltipSettingsControl.designer.cs">
+      <DependentUpon>TooltipSettingsControl.cs</DependentUpon>
     </Compile>
     <Compile Include="UI\MainForm.cs">
       <SubType>Form</SubType>
@@ -274,8 +274,14 @@
     <EmbeddedResource Include="UI\AuthenticationTokenForm.resx">
       <DependentUpon>AuthenticationTokenForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\Controls\TooltipSettingsCtrl.resx">
-      <DependentUpon>TooltipSettingsCtrl.cs</DependentUpon>
+    <EmbeddedResource Include="UI\Controls\SoundNotificationsControl.resx">
+      <DependentUpon>SoundNotificationsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Controls\SoundSettingsControl.resx">
+      <DependentUpon>SoundSettingsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Controls\TooltipSettingsControl.resx">
+      <DependentUpon>TooltipSettingsControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\MainForm.resx">
       <SubType>Designer</SubType>
@@ -434,14 +440,6 @@
     <EmbeddedResource Include="UI\Controls\ServerListControl.resx">
       <DependentUpon>ServerListControl.cs</DependentUpon>
       <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UI\Controls\NotificationSettingsControl.resx">
-      <SubType>Designer</SubType>
-      <DependentUpon>NotificationSettingsControl.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UI\Controls\NotificationsSettingsControl.resx">
-      <SubType>Designer</SubType>
-      <DependentUpon>NotificationsSettingsControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\Controls\ServersSettingsControl.resx">
       <SubType>Designer</SubType>

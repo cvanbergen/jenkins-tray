@@ -1,6 +1,6 @@
 namespace JenkinsTray.UI.Controls
 {
-    partial class NotificationSettingsControl
+    partial class SoundSettingsControl
     {
         /// <summary> 
         /// Required designer variable.
@@ -30,8 +30,8 @@ namespace JenkinsTray.UI.Controls
         {
             this.pathEdit = new DevExpress.XtraEditors.ButtonEdit();
             this.tableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
-            this.statusLabel = new DevExpress.XtraEditors.LabelControl();
             this.testSoundButton = new DevExpress.XtraEditors.SimpleButton();
+            this.statusLabel = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.pathEdit.Properties)).BeginInit();
             this.tableLayoutPanel.SuspendLayout();
             this.SuspendLayout();
@@ -69,15 +69,6 @@ namespace JenkinsTray.UI.Controls
             this.tableLayoutPanel.Size = new System.Drawing.Size(277, 29);
             this.tableLayoutPanel.TabIndex = 2;
             // 
-            // statusLabel
-            // 
-            this.statusLabel.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.statusLabel.Location = new System.Drawing.Point(3, 8);
-            this.statusLabel.Name = "statusLabel";
-            this.statusLabel.Size = new System.Drawing.Size(30, 13);
-            this.statusLabel.TabIndex = 2;
-            this.statusLabel.Text = "Sound";
-            // 
             // testSoundButton
             // 
             this.testSoundButton.Location = new System.Drawing.Point(199, 3);
@@ -87,14 +78,23 @@ namespace JenkinsTray.UI.Controls
             this.testSoundButton.Text = "Test";
             this.testSoundButton.Click += new System.EventHandler(this.testSoundButton_Click);
             // 
-            // NotificationSettingsControl
+            // statusLabel
+            // 
+            this.statusLabel.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.statusLabel.Location = new System.Drawing.Point(3, 8);
+            this.statusLabel.Name = "statusLabel";
+            this.statusLabel.Size = new System.Drawing.Size(30, 13);
+            this.statusLabel.TabIndex = 2;
+            this.statusLabel.Text = "Sound";
+            // 
+            // SoundSettingsControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.Controls.Add(this.tableLayoutPanel);
-            this.Name = "NotificationSettingsControl";
+            this.Name = "SoundSettingsControl";
             this.Size = new System.Drawing.Size(277, 29);
             ((System.ComponentModel.ISupportInitialize)(this.pathEdit.Properties)).EndInit();
             this.tableLayoutPanel.ResumeLayout(false);

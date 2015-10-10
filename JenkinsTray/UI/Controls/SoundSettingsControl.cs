@@ -13,7 +13,7 @@ using System.Diagnostics;
 
 namespace JenkinsTray.UI.Controls
 {
-    public partial class NotificationSettingsControl : DevExpress.XtraEditors.XtraUserControl
+    public partial class SoundSettingsControl : DevExpress.XtraEditors.XtraUserControl
     {
         ConfigurationService configurationService;
 
@@ -29,7 +29,7 @@ namespace JenkinsTray.UI.Controls
             }
         }
 
-        public NotificationSettingsControl()
+        public SoundSettingsControl()
         {
             InitializeComponent();
         }

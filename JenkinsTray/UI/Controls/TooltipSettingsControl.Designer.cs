@@ -1,6 +1,6 @@
 ﻿namespace JenkinsTray.UI.Controls
 {
-    partial class TooltipSettingsCtrl
+    partial class TooltipSettingsControl
     {
         /// <summary>
         /// Required designer variable.
@@ -86,12 +86,12 @@
             this.checkEdit1.Size = new System.Drawing.Size(211, 19);
             this.checkEdit1.TabIndex = 0;
             // 
-            // TooltipSettingsCtrl
+            // TooltipSettingsControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.groupControl2);
-            this.Name = "TooltipSettingsCtrl";
+            this.Name = "TooltipSettingsControl";
             this.Size = new System.Drawing.Size(477, 252);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).EndInit();
             this.groupControl2.ResumeLayout(false);

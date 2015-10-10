@@ -33,7 +33,7 @@ namespace JenkinsTray.UI
             this.serversTabPage = new DevExpress.XtraTab.XtraTabPage();
             this.serversSettingsControl = new JenkinsTray.UI.Controls.ServersSettingsControl();
             this.notificationsTabPage = new DevExpress.XtraTab.XtraTabPage();
-            this.notificationsSettingsControl = new JenkinsTray.UI.Controls.NotificationsSettingsControl();
+            this.notificationsSettingsControl = new JenkinsTray.UI.Controls.SoundNotificationsControl();
             this.generalTabPage = new DevExpress.XtraTab.XtraTabPage();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
@@ -314,7 +314,7 @@ namespace JenkinsTray.UI
         private DevExpress.XtraTab.XtraTabPage serversTabPage;
         private DevExpress.XtraTab.XtraTabPage notificationsTabPage;
         private JenkinsTray.UI.Controls.ServersSettingsControl serversSettingsControl;
-        private JenkinsTray.UI.Controls.NotificationsSettingsControl notificationsSettingsControl;
+        private JenkinsTray.UI.Controls.SoundNotificationsControl notificationsSettingsControl;
         private DevExpress.XtraTab.XtraTabPage generalTabPage;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private DevExpress.XtraEditors.SpinEdit refreshSpinEdit;

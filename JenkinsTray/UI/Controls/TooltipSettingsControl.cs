@@ -11,11 +11,11 @@ using Spring.Context.Support;
 
 namespace JenkinsTray.UI.Controls
 {
-    public partial class TooltipSettingsCtrl : DevExpress.XtraEditors.XtraUserControl
+    public partial class TooltipSettingsControl : DevExpress.XtraEditors.XtraUserControl
     {
         ConfigurationService configurationService;
 
-        public TooltipSettingsCtrl()
+        public TooltipSettingsControl()
         {
             InitializeComponent();
         }

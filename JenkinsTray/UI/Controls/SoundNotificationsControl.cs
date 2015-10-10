@@ -11,11 +11,11 @@ using Spring.Context.Support;
 
 namespace JenkinsTray.UI.Controls
 {
-    public partial class NotificationsSettingsControl : DevExpress.XtraEditors.XtraUserControl
+    public partial class SoundNotificationsControl : DevExpress.XtraEditors.XtraUserControl
     {
         ConfigurationService configurationService;
 
-        public NotificationsSettingsControl()
+        public SoundNotificationsControl()
         {
             InitializeComponent();
         }
@@ -36,10 +36,10 @@ namespace JenkinsTray.UI.Controls
 
         public void InitializeValues()
         {
-            notificationSettingsControl1.Initialize();
-            notificationSettingsControl2.Initialize();
-            notificationSettingsControl3.Initialize();
-            notificationSettingsControl4.Initialize();
+            soundSettingsControl1.Initialize();
+            soundSettingsControl2.Initialize();
+            soundSettingsControl3.Initialize();
+            soundSettingsControl4.Initialize();
         }
 
         public bool SoundNotificationsEnabled()
@@ -49,10 +49,10 @@ namespace JenkinsTray.UI.Controls
 
         private void enableSoundCheckBox_CheckedChanged(object sender, EventArgs e)
         {
-            notificationSettingsControl1.Enabled =
-                notificationSettingsControl2.Enabled =
-                notificationSettingsControl3.Enabled =
-                notificationSettingsControl4.Enabled =
+            soundSettingsControl1.Enabled =
+                soundSettingsControl2.Enabled =
+                soundSettingsControl3.Enabled =
+                soundSettingsControl4.Enabled =
                 treatUnstableAsFailedCheckBox.Enabled =
                 enableSoundCheckBox.Checked;
             configurationService.SetSoundNotifications(enableSoundCheckBox.Checked);
@@ -65,10 +65,10 @@ namespace JenkinsTray.UI.Controls
 
         public void InvalidateData()
         {
-            notificationSettingsControl1.InvalidateData();
-            notificationSettingsControl2.InvalidateData();
-            notificationSettingsControl3.InvalidateData();
-            notificationSettingsControl4.InvalidateData();
+            soundSettingsControl1.InvalidateData();
+            soundSettingsControl2.InvalidateData();
+            soundSettingsControl3.InvalidateData();
+            soundSettingsControl4.InvalidateData();
         }
 
         private void treatUnstableAsFailedCheckBox_CheckedChanged(object sender, EventArgs e)
