@@ -25,9 +25,9 @@
     <property name="ProjectsUpdateService" ref="ProjectsUpdateService" />
     <property name="ApplicationUpdateService" ref="ApplicationUpdateService" />
   </object>
-  <object id="AboutForm" type="JenkinsTray.UI.AboutForm" />
-  <object id="AuthenticationTokenForm" type="JenkinsTray.UI.AuthenticationTokenForm" />
-  <object id="SettingsForm" type="JenkinsTray.UI.SettingsForm">
+  <object id="AboutForm" type="JenkinsTray.UI.AboutBox" />
+  <object id="AuthenticationTokenBox" type="JenkinsTray.UI.AuthenticationTokenBox" />
+  <object id="SettingsForm" type="JenkinsTray.UI.MainSettingsForm">
     <property name="ConfigurationService" ref="ConfigurationService" />
     <property name="JenkinsService" ref="JenkinsService" />
   </object>

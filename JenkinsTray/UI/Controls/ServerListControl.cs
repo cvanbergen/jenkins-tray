@@ -36,7 +36,7 @@ namespace JenkinsTray.UI.Controls
 
         private void addServerButtonItem_ItemClick(object sender, ItemClickEventArgs e)
         {
-            var namingForm = new EditServerForm();
+            var namingForm = new ServerSettingsForm();
             if (namingForm.ShowDialog() != DialogResult.OK)
                 return;
 
@@ -66,7 +66,7 @@ namespace JenkinsTray.UI.Controls
             if (server == null)
                 return;
 
-            var namingForm = new EditServerForm(server);
+            var namingForm = new ServerSettingsForm(server);
             if (namingForm.ShowDialog() != DialogResult.OK)
                 return;
 

@@ -94,7 +94,7 @@ namespace JenkinsTray.UI
 
         private void settingsButtonItem_ItemClick(object sender, ItemClickEventArgs e)
         {
-            SettingsForm.Instance.ShowDialog();
+            MainSettingsForm.Instance.ShowDialog();
         }
 
         private void LoadProjects()
@@ -204,7 +204,9 @@ namespace JenkinsTray.UI
 
         private void aboutButtonItem_ItemClick(object sender, ItemClickEventArgs e)
         {
-            AboutForm.Instance.ShowDialog();
+            var aboutBox = new AboutBox();
+            aboutBox.ShowDialog();
+            //AboutForm.Instance.ShowDialog();
         }
 
         private void projectsGridView_MouseMove(object sender, MouseEventArgs e)
@@ -507,7 +509,7 @@ namespace JenkinsTray.UI
             if (lastFailedBuild == null)
                 return;
 
-            var form = new ClaimBuildForm();
+            var form = new ClaimBuildBox();
             form.Initialize(project, lastFailedBuild);
 
             var res = form.ShowDialog();
@@ -627,7 +629,7 @@ namespace JenkinsTray.UI
             if (project == null)
                 return;
 
-            AuthenticationTokenForm.ShowDialogOrFocus(project);
+            AuthenticationTokenBox.ShowDialogOrFocus(project);
         }
 
         private delegate void ProjectsUpdatedDelegate();

@@ -173,7 +173,7 @@ namespace JenkinsTray.UI
         private void settingsMenuItem_Click(object sender, EventArgs e)
         {
             MainForm.Instance.Show();
-            SettingsForm.ShowDialogOrFocus();
+            MainSettingsForm.ShowDialogOrFocus();
         }
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
@@ -184,7 +184,9 @@ namespace JenkinsTray.UI
         private void aboutMenuItem_Click(object sender, EventArgs e)
         {
             MainForm.Instance.Show();
-            AboutForm.ShowDialogOrFocus();
+            var aboutBox = new AboutBox();
+            aboutBox.ShowDialog();
+            //AboutForm.ShowDialogOrFocus();
         }
 
         public void UpdateNotifier()
